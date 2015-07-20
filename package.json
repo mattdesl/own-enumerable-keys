@@ -1,0 +1,39 @@
+{
+  "name": "own-enumerable-keys",
+  "version": "1.0.0",
+  "description": "gets own enumerable property names and symbols",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "faucet": "0.0.1",
+    "tape": "^4.0.1"
+  },
+  "scripts": {
+    "test": "node test/index.js | faucet"
+  },
+  "keywords": [
+    "property",
+    "enumerable",
+    "keys",
+    "object",
+    "getOwnPropertySymbols",
+    "getOwnPropertyNames",
+    "objects",
+    "assign"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/own-enumerable-keys.git"
+  },
+  "homepage": "https://github.com/mattdesl/own-enumerable-keys",
+  "bugs": {
+    "url": "https://github.com/mattdesl/own-enumerable-keys/issues"
+  }
+}
