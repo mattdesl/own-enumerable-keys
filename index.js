@@ -1,14 +1,6 @@
-var propIsEnumerable = Object.prototype.propertyIsEnumerable
+var getOwnEnumSymbols = require('get-own-enumerable-property-symbols')
 
 module.exports = ownEnumerableKeys
 function ownEnumerableKeys (obj) {
-  var keys = Object.getOwnPropertyNames(obj)
-
-  if (Object.getOwnPropertySymbols) {
-    keys = keys.concat(Object.getOwnPropertySymbols(obj))
-  }
-
-  return keys.filter(function (key) {
-    return propIsEnumerable.call(obj, key)
-  })
+  return Object.keys(obj).concat(Object.getOwnPropertySymbols ? getOwnEnumSymbols(obj) : [])
 }
