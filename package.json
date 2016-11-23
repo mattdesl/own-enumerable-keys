@@ -9,7 +9,9 @@
     "email": "dave.des@gmail.com",
     "url": "https://github.com/mattdesl"
   },
-  "dependencies": {},
+  "dependencies": {
+    "get-own-enumerable-property-symbols": "^1.0.1"
+  },
   "devDependencies": {
     "babel": "^5.6.23",
     "faucet": "0.0.1",
